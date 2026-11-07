@@ -1,0 +1,143 @@
+/* ����� ᥫ���� ��࠭�祭 ᢮�� ��������. */
+
+/* 01. ��業�� ������� �� �ਭ� த�⥫�. */
+.task-01 .meter { width: 50%; }
+
+/* 02. border-box ����砥� padding � border � �������� �ਭ�. */
+.task-02 .note {
+  width: 90%;
+  max-width: 420px;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+/* 03. min-height �������� ����� ���, �᫨ ⥪�� �����. */
+.task-03 .banner { min-height: 25vh; }
+
+/* 04. ������ �⨫� ����⠭� �� 㧪�� ��࠭. */
+.task-04 .headline { font-size: 24px; }
+@media (min-width: 600px) {
+  .task-04 .headline { font-size: 40px; }
+}
+
+/* 05. Flexbox ��४��砥� ���ࠢ����� ������⮢. */
+.task-05 .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (min-width: 640px) {
+  .task-05 .actions { flex-direction: row; }
+}
+
+/* 06. rem ������ �� ࠧ��� ���� ��୥���� �������. */
+.task-06 .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.task-06 .menu a { padding: 0.5rem; }
+@media (min-width: 600px) {
+  .task-06 .menu { flex-direction: row; }
+}
+
+/* 07. minmax(0, 1fr) ���� ࠢ�� ������� ��� ��९�������. */
+.task-07 .catalog {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+.task-07 .item {
+  padding: 0.75rem;
+  background: #eef2f8;
+  overflow-wrap: anywhere;
+}
+@media (min-width: 600px) {
+  .task-07 .catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 900px) {
+  .task-07 .catalog { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* 08. ��⮬���᪠� ���� ��࠭�� �ய��樨 ����ࠦ����. */
+.task-08 .photo { margin: 0; }
+.task-08 .photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.task-08 .photo figcaption { padding: 0.75rem; }
+@media (min-width: 700px) {
+  .task-08 .photo { display: flex; align-items: center; }
+  .task-08 .photo img { width: 55%; flex: 0 0 55%; }
+  .task-08 .photo figcaption { min-width: 0; overflow-wrap: anywhere; }
+}
+
+/* 09. clamp ��࠭�稢��� ������ �����騩�� ࠧ���. */
+.task-09 .hero {
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.task-09 .hero h3 {
+  font-size: clamp(24px, 6vw, 56px);
+  margin-block: 0 1rem;
+}
+.task-09 .hero p { margin: 0; }
+
+/* 10. ����-��࠭�� �����᪮�. */
+.task-10 .workshop {
+  width: 95%;
+  max-width: 900px;
+  margin-inline: auto;
+  color: #203446;
+  overflow-wrap: anywhere;
+}
+.task-10 .workshop * { box-sizing: border-box; }
+.task-10 .workshop h3 { font-size: 1.75rem; margin-block: 0 1rem; }
+.task-10 .workshop h4 { margin-block: 0 0.75rem; font-size: 1.2rem; }
+.task-10 .workshop p { margin-block: 0 0.75rem; }
+.task-10 .workshop-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.task-10 .workshop-menu a {
+  padding: 0.5rem 0.75rem;
+  color: #174d7a;
+  background: #edf3f8;
+  border-radius: 0.375rem;
+}
+.task-10 .intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.task-10 .intro img { display: block; width: 100%; height: auto; }
+.task-10 .intro-text { min-width: 0; }
+.task-10 .classes {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.task-10 .class-card {
+  padding: 1rem;
+  background: #edf3f8;
+  border-radius: 0.5rem;
+}
+.task-10 .contacts { padding-block: 1rem; border-top: 1px solid #ccd9e3; }
+@media (min-width: 640px) {
+  .task-10 .workshop-menu { flex-direction: row; flex-wrap: wrap; }
+  .task-10 .intro { flex-direction: row; }
+  .task-10 .intro img { width: 40%; flex: 0 0 40%; }
+}
+@media (min-width: 900px) {
+  .task-10 .classes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
