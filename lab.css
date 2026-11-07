@@ -1,4 +1,4 @@
-/* ��ଫ���� �ࠪ⨪㬠. �⨫� ��� ������� ���� � student.css. */
+/* Оформление практикума. Стили для заданий пишите в student.css. */
 body {
   margin: 0;
   color: #222;
@@ -54,7 +54,7 @@ code {
   overflow-wrap: anywhere;
 }
 
-/* ��砫�� ��� ����⮢��. */
+/* Начальный вид заготовок. */
 .task-01 .track {
   background: #ddd;
 }

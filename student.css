@@ -1,9 +1,9 @@
-/* ����� ᥫ���� ��࠭�祭 ᢮�� ��������. */
+/* Каждый селектор ограничен своим заданием. */
 
-/* 01. ��業�� ������� �� �ਭ� த�⥫�. */
+/* 01. Проценты считаются от ширины родителя. */
 .task-01 .meter { width: 50%; }
 
-/* 02. border-box ����砥� padding � border � �������� �ਭ�. */
+/* 02. border-box включает padding и border в заданную ширину. */
 .task-02 .note {
   width: 90%;
   max-width: 420px;
@@ -11,16 +11,16 @@
   box-sizing: border-box;
 }
 
-/* 03. min-height �������� ����� ���, �᫨ ⥪�� �����. */
+/* 03. min-height позволяет блоку расти, если текста много. */
 .task-03 .banner { min-height: 25vh; }
 
-/* 04. ������ �⨫� ����⠭� �� 㧪�� ��࠭. */
+/* 04. Базовые стили рассчитаны на узкий экран. */
 .task-04 .headline { font-size: 24px; }
 @media (min-width: 600px) {
   .task-04 .headline { font-size: 40px; }
 }
 
-/* 05. Flexbox ��४��砥� ���ࠢ����� ������⮢. */
+/* 05. Flexbox переключает направление элементов. */
 .task-05 .actions {
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
   .task-05 .actions { flex-direction: row; }
 }
 
-/* 06. rem ������ �� ࠧ��� ���� ��୥���� �������. */
+/* 06. rem зависит от размера шрифта корневого элемента. */
 .task-06 .menu {
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
   .task-06 .menu { flex-direction: row; }
 }
 
-/* 07. minmax(0, 1fr) ���� ࠢ�� ������� ��� ��९�������. */
+/* 07. minmax(0, 1fr) даёт равные колонки без переполнения. */
 .task-07 .catalog {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -59,7 +59,7 @@
   .task-07 .catalog { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
-/* 08. ��⮬���᪠� ���� ��࠭�� �ய��樨 ����ࠦ����. */
+/* 08. Автоматическая высота сохраняет пропорции изображения. */
 .task-08 .photo { margin: 0; }
 .task-08 .photo img {
   display: block;
@@ -73,7 +73,7 @@
   .task-08 .photo figcaption { min-width: 0; overflow-wrap: anywhere; }
 }
 
-/* 09. clamp ��࠭�稢��� ������ �����騩�� ࠧ���. */
+/* 09. clamp ограничивает плавно меняющийся размер. */
 .task-09 .hero {
   min-height: 35vh;
   display: flex;
@@ -88,7 +88,7 @@
 }
 .task-09 .hero p { margin: 0; }
 
-/* 10. ����-��࠭�� �����᪮�. */
+/* 10. Мини-страница мастерской. */
 .task-10 .workshop {
   width: 95%;
   max-width: 900px;
